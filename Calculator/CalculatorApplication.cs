@@ -17,7 +17,7 @@ public sealed class CalculatorApplication
 
     public void Run()
     {
-        _output.WriteLine("Basic Calculator (+, -, *). Enter q to quit.");
+        _output.WriteLine("Basic Calculator (+, -, *, /). Enter q to quit.");
 
         while (true)
         {
@@ -34,7 +34,7 @@ public sealed class CalculatorApplication
                 continue;
             }
 
-            _output.Write("Operator (+, -, *): ");
+            _output.Write("Operator (+, -, *, /): ");
             var symbol = _input.ReadLine();
             if (symbol is null)
             {
@@ -56,7 +56,7 @@ public sealed class CalculatorApplication
 
             if (!_calculator.TryCalculate(symbol, left, right, out var result))
             {
-                _output.WriteLine("Unsupported operator. Use +, -, or *.");
+                _output.WriteLine("Unsupported operator. Use +, -, *, or /.");
                 continue;
             }
 
