@@ -1,8 +1,8 @@
 # Basic Calculator
 
 A dependency-free .NET 8 console calculator built around independent operation
-implementations. It supports addition (`+`), subtraction (`-`), and
-multiplication (`*`); division is intentionally not implemented.
+implementations. It supports addition (`+`), subtraction (`-`),
+multiplication (`*`), and division (`/`).
 
 Run it from the repository root with:
 
